@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Car 1 - Car Rental Service</title>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+
+  </head>
+  <body>
+    <header>
+      <h1>Car Rental Service</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="Home.HTML">Home</a></li>
+        <li><a href="Aboutus.HTML">About Us</a></li>
+        <li><a href="Cars.HTML">Cars</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>KIA Sportage</h2>
+      <img src="KIA Sportage.jpg" alt="KIA Sportage.jpg">
+      <ul>
+        <li><strong>Car type:</strong> Compact car</li>
+        <li><strong>Date of manufacture:</strong> 2020-01-01</li>
+        <li><strong>Rental type:</strong> Daily</li>
+        <li><strong>Rental value:</strong> 150,000 S.P</li>
+        <li><strong>Description:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+      </ul>
+      <form id="rentalForm" onsubmit="return validateForm()">
+        <h3>Rental Information</h3>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="nationalId">National ID:</label>
+        <input type="text" id="nationalId" name="nationalId" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="text" id="dob" name="dob" placeholder="yyyy-mm-dd" required>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="text" id="mobile" name="mobile" placeholder="09xxxxxxxxx" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="rentalDuration">Rental Duration (days):</label>
+        <input type="number" id="rentalDuration" name="rentalDuration" required>
+
+        <label for="additionalFees">Additional Fees:</label>
+        <input type="checkbox" id="additionalFees" name="additionalFees">
+
+        <label for="captcha">Captcha:</label>
+        <input type="text" id="captcha" name="captcha" required>
+        <img src="captcha.jpg" alt="Captcha code">
+
+        <input type="submit" value="Submit">
+      </form>
+    </main>
+    <footer>
+      <p>Car Rental Service &copy; 2023</p>
+    </footer>
+    <script src="MyFunctions.js"></script>
+  </body>
+</html>
